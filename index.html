@@ -1,0 +1,18 @@
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title> AI WHICH GENERATES SHAKESPEAR'S TYPE TEXT</title>
+</head>
+<body>
+    <h1>AI WHICH GENERATES SHAKESPEAR'S TYPE TEXT</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+    <form>
+        <label>INPUT A WORD</label><br>
+        <input type="text" name="Text"><br><br>
+        <input type="submit" name="Generated Text"><br><br>
+    </form>
+</body>
+</hmtl>
